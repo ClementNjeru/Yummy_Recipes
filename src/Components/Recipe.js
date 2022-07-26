@@ -15,6 +15,11 @@ function Recipe (){
                 </div>
                 <div className="recipe-list">
                     <RecipeItem/>
+                    <RecipeItem/>
+                    <RecipeItem/>
+                    <RecipeItem/>
+                    <RecipeItem/>
+                    
                 </div>
             
             </div>

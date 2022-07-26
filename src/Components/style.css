@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #c2681f;
+    background-color: #d0d315;
 }
 
 .header{
@@ -41,25 +41,30 @@ body{
     font-size: 17px;
 }
 .recipe-list{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
     display: grid;
-    grid-gap:2rem;
-    margin: 25px auto;
-    width: 80%;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 3rem;
+    justify-content: space-between;
 }
 .recipe-item{
-    width: 180px;
-    border-radius: 3px;
+    width: 350px;
+    border-radius: 1rem;
     padding:5px;
-    background-color: black
+    background-color: rgb(138, 153, 73)
 }
 img{
-    width: 100%;
-    border-radius: 15px;
+    width: 350px;
+    border-radius: 20px;
+    max-height: 500px;
+    margin-bottom: 20px;
 }
 .recipe-list h3{
     font-size: 18px;
     font-weight: 600;
     color: aliceblue;
+    width:350px
 
 }
