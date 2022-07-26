@@ -1,6 +1,7 @@
 import React from 'react';
 import  './style.css';
 import RecipeItem from './RecipeItem';
+import RecipeAlpha from './RecipeAlpha'; 
 
 function Recipe (){
     return(
@@ -21,7 +22,9 @@ function Recipe (){
                     <RecipeItem/>
                     
                 </div>
-            
+                <div className="LetterBox">
+                    <RecipeAlpha/>   
+                </div>
             </div>
 
         </>
