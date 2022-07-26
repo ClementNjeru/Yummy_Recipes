@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import  './style.css';
+import { useState } from 'react';
+// import { useEffect } from 'react';
 import RecipeItem from './RecipeItem';
 import RecipeAlpha from './RecipeAlpha'; 
 
-function Recipe (){
+const Recipe=()=>{
+    // const[recipe, setRecipe]= useState("")
+    const [meals, setMeals]= useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
+
+    useEffect(()=>{
+        fetch(meals).then(respose=>respose.json()).then(data=>{
+            setMeals(data.meals);
+        })
+    },[meals])
+
+
     return(
         <>
             <div className='header'>

@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #d0d315;
+    background-color:#d99e88;
 }
 
 .header{
@@ -24,7 +24,7 @@ body{
 .header-container h1{
     font-size: 50px;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 50px;
     padding-top: 2.5rem;
     margin: 1rem
 
@@ -53,7 +53,7 @@ body{
     width: 350px;
     border-radius: 1rem;
     padding:5px;
-    background-color: rgb(138, 153, 73)
+    background-color: rgb(137 9 9)
 }
 img{
     width: 350px;
