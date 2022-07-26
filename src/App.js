@@ -1,12 +1,14 @@
-import React from "react";
-import Recipe from "./Components/Recipe";
+import React from 'react';
+import Recipe from './Components/Recipe';
+import './Components/style.css';
 
-function App(){
+
+function App() {
   return (
-    <>
-    <Recipe />
-    </>
+    
+    <Recipe/>
+    
   )
 }
 
-export  default App;
+export default App;
