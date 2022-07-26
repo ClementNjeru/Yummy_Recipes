@@ -7,7 +7,7 @@ const RecipeAlpha=()=>{
             letters.map(item=>{
                 return(
                     <div className="letter-cards">
-                        <h3>{item}</h3>
+                        <h3>{item}</h3>=
                     </div>
                 )
             })
