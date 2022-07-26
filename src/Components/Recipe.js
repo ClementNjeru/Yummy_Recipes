@@ -7,13 +7,15 @@ import RecipeAlpha from './RecipeAlpha';
 
 const Recipe=()=>{
     // const[recipe, setRecipe]= useState("")
-    const [meals, setMeals]= useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
+    const [meals, setMeals]= useState([]);
 
     useEffect(()=>{
-        fetch(meals).then(respose=>respose.json()).then(data=>{
-            setMeals(data.meals);
+        fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
+        .then(respose=>respose.json())
+        .then(data=>{ setMeals(data.meals);
         })
-    },[meals])
+        console.log(meals);
+    },[])
 
 
     return(
