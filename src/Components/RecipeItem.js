@@ -4,11 +4,11 @@ const RecipeItem=({data})=>{
     return(
         <>  
             {
-                (!data) ? "Not Found" : data.map(item => {
+                (!data) ? "Not Found" : data.map(data => {
                     return (
                     <div className="recipe-item">
-                        <img src={item.strMealThumb} alt="" />
-                        <h3>{item.strMeal}</h3>
+                        <img src={data.strMealThumb} alt="" />
+                        <h3>{data.strMeal}</h3>
                     </div>
                     )
                 })
