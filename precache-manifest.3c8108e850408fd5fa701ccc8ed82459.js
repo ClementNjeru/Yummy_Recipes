@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2e19fd5faecd4de6c32b",
-    "url": "/Yummy_Recipes/static/css/main.42594549.chunk.css"
+    "revision": "045d462302ab249b2f0b",
+    "url": "/Yummy_Recipes/static/css/main.bebded79.chunk.css"
   },
   {
-    "revision": "2e19fd5faecd4de6c32b",
-    "url": "/Yummy_Recipes/static/js/main.2e19fd5f.chunk.js"
+    "revision": "045d462302ab249b2f0b",
+    "url": "/Yummy_Recipes/static/js/main.045d4623.chunk.js"
   },
   {
     "revision": "cc360fb6938c4a946641",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Yummy_Recipes/static/js/runtime~main.a9b807c8.js"
   },
   {
-    "revision": "e446f803466d071d7798232b586439a1",
+    "revision": "13fb6b4044a275a885fe34b38a7c930c",
     "url": "/Yummy_Recipes/index.html"
   }
 ];
