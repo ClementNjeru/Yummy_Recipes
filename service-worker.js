@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Yummy_Recipes/precache-manifest.d9d116189b15cd5faf5e0af8383c2314.js"
+  "/Yummy_Recipes/precache-manifest.51cefcd7da130bf0e6dc96d2fccbb08c.js"
 );
 
 workbox.clientsClaim();
