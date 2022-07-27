@@ -18,6 +18,11 @@ const Recipe=()=>{
         setShow(true);
 
     },[meals])
+    // console.log(data);
+    const setIndex=(alpha) =>{
+    
+        setMeals(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`)
+    }
 
 
     return(
@@ -37,7 +42,7 @@ const Recipe=()=>{
                     }
                 </div>
                 <div className="LetterBox">
-                    <RecipeAlpha/>   
+                    <RecipeAlpha alphaIndex={(alpha)=> setIndex(alpha)}/>   
                 </div>
             </div>
 

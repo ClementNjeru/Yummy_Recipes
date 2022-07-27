@@ -1,14 +1,17 @@
 import React from "react";
+
 const RecipeItem=({data})=>{
-    console.log(data);
+    // console.log(data);
+
     return(
         <>  
             {
-                (!data) ? "Not Found" : data.map(data => {
+                (!data) ? "Not Found" : Object.keys(data).map((key) => {
+                    // console.log(key);
                     return (
-                    <div className="recipe-item">
-                        <img src={data.strMealThumb} alt="" />
-                        <h3>{data.strMeal}</h3>
+                    <div key={key} className="recipe-item" >
+                        <img src={data[key].strMealThumb} alt=""/>
+                        <h3>{data[key].strMeal}</h3>
                     </div>
                     )
                 })
