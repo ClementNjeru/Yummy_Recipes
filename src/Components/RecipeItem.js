@@ -1,16 +1,20 @@
-import React from 'react';
-import Recipe from './Recipe';
-const RecipeItem=() => {
-    return (
-        <>
-            <div className="recipe-item">
-                <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Spicy Arrabiata Penne" />
-                <h3>Spicy Arrabiata Penne</h3>
-            </div>
+import React from "react";
+const RecipeItem=({data})=>{
+    console.log(data);
+    return(
+        <>  
+            {
+                (!data) ? "Not Found" : data.map(item => {
+                    return (
+                    <div className="recipe-item">
+                        <img src={item.strMealThumb} alt="" />
+                        <h3>{item.strMeal}</h3>
+                    </div>
+                    )
+                })
+            }
             
         </>
-
     )
 }
-
-export default  RecipeItem;
+export default RecipeItem;

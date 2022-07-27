@@ -6,16 +6,18 @@ import RecipeItem from './RecipeItem';
 import RecipeAlpha from './RecipeAlpha'; 
 
 const Recipe=()=>{
-    // const[recipe, setRecipe]= useState("")
-    const [meals, setMeals]= useState([]);
+    const[item, setItem]= useState([]);
+    const [meals, setMeals]= useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
+    const [show, setShow]= useState(false);
 
     useEffect(()=>{
-        fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
-        .then(respose=>respose.json())
-        .then(data=>{ setMeals(data.meals);
-        })
-        console.log(meals);
-    },[])
+        fetch(meals)
+        .then(res=>res.json())
+        .then(data=>console.log(data.meals));
+        // console.log(meals);
+        setShow(true);
+
+    },[meals])
 
 
     return(
@@ -29,12 +31,10 @@ const Recipe=()=>{
                     <input type="search" className="search-input" placeholder="search..."/>
                 </div>
                 <div className="recipe-list">
-                    <RecipeItem/>
-                    <RecipeItem/>
-                    <RecipeItem/>
-                    <RecipeItem/>
-                    <RecipeItem/>
                     
+                    {
+                        show ? <RecipeItem data={item}/>: "Not Found"
+                    }
                 </div>
                 <div className="LetterBox">
                     <RecipeAlpha/>   
