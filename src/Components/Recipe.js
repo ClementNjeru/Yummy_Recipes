@@ -9,6 +9,7 @@ const Recipe=()=>{
     const[data, setData]= useState([]);
     const [meals, setMeals]= useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
     const [show, setShow]= useState(false);
+    const [search, setSearch]= useState("");
 
     useEffect(()=>{
         fetch(meals)
@@ -24,6 +25,13 @@ const Recipe=()=>{
         setMeals(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`)
     }
 
+    const searchRecipe=(event) =>{
+        if (event.key==="Enter"){
+            setMeals(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}
+            `)
+        }
+    }
+
 
     return(
         <>
@@ -33,7 +41,7 @@ const Recipe=()=>{
                     <h4>“Cooking demands attention, patience, and above all, a respect for the gifts of the earth. It is a form of worship, a way of giving thanks.”</h4>
                 </div>
                 <div>
-                    <input type="search" className="search-input" placeholder="search..."/>
+                    <input type="search" className="search-input" placeholder="search..." onChange ={e=>setSearch(e.target.value)} onKeyPress={searchRecipe}/>
                 </div>
                 <div className="recipe-list">
                     
