@@ -8,8 +8,8 @@ This is a platform that allows individuals from all over the world to navigate t
 
 ## Screenshots
  ![scrnsht1.png](link)
- ![image](link)
- ![image](link)
+ ![image](./public/screenshot1.png)
+ ![image](./public/screenshot2.png)
  ![image](link)
 
 <!-- @@ -33,7 +33,7 @@ This is a platform that allows people working from home to navigate through the
