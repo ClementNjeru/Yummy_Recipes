@@ -6,14 +6,14 @@ import RecipeItem from './RecipeItem';
 import RecipeAlpha from './RecipeAlpha'; 
 
 const Recipe=()=>{
-    const[item, setItem]= useState([]);
+    const[data, setData]= useState([]);
     const [meals, setMeals]= useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
     const [show, setShow]= useState(false);
 
     useEffect(()=>{
         fetch(meals)
         .then(res=>res.json())
-        .then(data=>console.log(data.meals));
+        .then(data=>setData(data.meals));
         // console.log(meals);
         setShow(true);
 
@@ -33,7 +33,7 @@ const Recipe=()=>{
                 <div className="recipe-list">
                     
                     {
-                        show ? <RecipeItem data={item}/>: "Not Found"
+                        show ? <RecipeItem data={data}/>: "Not Found"
                     }
                 </div>
                 <div className="LetterBox">
