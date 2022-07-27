@@ -27,7 +27,7 @@ const Recipe=()=>{
 
     const searchRecipe=(event) =>{
         if (event.key==="Enter"){
-            setMeals(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}
+            setMeals(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}
             `)
         }
     }
