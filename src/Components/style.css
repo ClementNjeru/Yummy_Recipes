@@ -7,19 +7,32 @@
 }
 
 body{
-    background-color:#d99e88;
+    background-color:rgb(209, 119, 8)
 }
-
+.section{
+    background-color: rgb(22, 20, 20);
+    color:  rgb(233, 133, 12);
+    padding: 30px;
+    margin-bottom: 3rem;
+    font-size: 50px;
+}
+.header1{
+    background-color: rgb(22, 20, 20);
+    color: rgb(233, 133, 12);
+    /* padding: 20px; */
+    /* margin-bottom: 3rem; */
+    font-size: 50px;
+}
 .header{
     /* background-color: rgb(105, 98, 98); */
-    width: 80%;
+    /* width: 80%; */
     margin:0 auto;
-    color: rgb(31, 21, 21);
+    /* color: rgb(31, 21, 21); */
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    border-bottom: 1px solid rgb(92, 85, 85);
+    /* border-bottom: 1px solid rgb(92, 85, 85); */
 }
 .header-container h1{
     font-size: 50px;
@@ -31,7 +44,7 @@ body{
 }
 .search-input{
     margin: 1rem;
-    width: 500px;
+    width: 700px;
     height: 40px;
     outline: none;
     border-radius: 20px;
@@ -53,7 +66,7 @@ body{
     width: 350px;
     border-radius: 1rem;
     padding:5px;
-    background-color: rgb(137 9 9)
+    /* background-color: rgb(137 9 9) */
 }
 img{
     width: 350px;
@@ -82,4 +95,14 @@ img{
     background-color: black;
     width: 50px;
     margin: 0 5px 0 5px;
+}
+#footer {
+    position: fixed;
+    /* padding: 20px; */
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(244, 240, 240);
+    text-align: center;
+    font-weight: bold;
 }
