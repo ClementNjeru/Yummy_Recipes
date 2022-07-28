@@ -16,8 +16,7 @@ This is a platform that allows individuals from all over the world to navigate t
 Use Live share extension to run the HTML File. -->
 ***
 ## Live Link
-Or you can access the web application directly via this [LINK.]([link.com/])
-<!-- Or you can access the web application directly via this https://clementnjeru.github.io/Smart-deliveries/ -->
+Or you can access the web application directly via this https://clementnjeru.github.io/Yummy_Recipes/
 ***
 
 ## Technologies Used
