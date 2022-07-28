@@ -1,8 +1,6 @@
 import React from "react";
-
 const RecipeItem=({data})=>{
     // console.log(data);
-
     return(
         <>  
             {
